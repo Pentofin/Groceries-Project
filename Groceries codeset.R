@@ -288,4 +288,4 @@ SeaFNMeans <- aggregate(as.numeric(as.character(SeaFN$Price)), list(SeaFN$Produc
 colnames(SeaFNMeans) <- c("Seafood Product", "Average Price")
 SeaFNSumsold <- aggregate(as.numeric(as.character(SeaFN$Price)), by = list(SeaFN$Product), FUN = sum)
 SeaFNSums <- cbind(SeaFNSumsold[,1], as.data.frame(sprintf("%.2f", SeaFNSumsold[,2])))
-colnames(SeaFNSums) <- c("Shelf Product", "Total Amount Spent on Product")
+colnames(SeaFNSums) <- c("Seafood Product", "Total Amount Spent on Product")
